@@ -6,7 +6,7 @@ properties([
         ])
         ])
         
-if(name=='Yes'){
+if(Answer=='Yes'){
     j_node = 'master'
 }
 else{
