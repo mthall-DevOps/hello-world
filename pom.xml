@@ -5,10 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.web</groupId>
-  <artifactId>web_app</artifactId>
+  <artifactId>webapplication</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-	<url>http://maven.apache.org</url>
 
   <name>web_app</name>
   <!-- FIXME change it to the project's website -->
