@@ -1,4 +1,3 @@
-!#pipeline script for building packaging and archiving
 pipeline{
 	agent any
 		stages{
