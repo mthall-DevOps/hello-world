@@ -1,0 +1,19 @@
+##pipeline script for building packaging and archiving
+pipeline{
+	agent any
+		stages{
+			stage{
+				steps('Build and Package'){
+					echo 'Building and packaging the code using Maven'
+					powershell 'mvn clean package'
+					}
+
+				post{
+					success{
+					echo 'Archiving the package.....'
+					archiveArtifacts artifacts: '**/*.war', followSymlinks: false
+					}
+				}
+			}
+		}
+}
