@@ -1,9 +1,9 @@
 pipeline{
 agent any
 	stages{
-		stage{
-			steps('Build and Package'){
-				echo 'Building and packaging the code using Maven'
+		stage('Build and Package'){
+			steps{
+			echo 'Building and packaging the code using Maven'
 				powershell 'mvn clean package'
 				}
 		
